@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tea.measuremaster">
+    <application
+        tools:replace="android:icon"
+        android:allowBackup="true"
+        android:icon="@mipmap/icone"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icone"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainMenu"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.LevelLib.SubTraverse"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.coortrans.SubCoortrans"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.tool.ItemMenu"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.tool.SubDmsToRad"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.tool.SubRadToDms"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.tool.CoordinateForwardCal"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.tool.CoordinateInverseCal"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.TraverseAdjustment.Adapter.SubTemplete"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.TraverseAdjustment.Adapter.Traverse_qishi"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.Traverse.Daoxian_resultActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.Geodesy.GeoAcivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.LevelLib.LevelLib_known"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.LevelLib.LevelLib_station"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.LevelLib.LevelLib_result"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tea.quxian.QuxianActivity"/>
+        <activity android:name="com.tea.quxian.Quxian_resultActivity"/>
+        <activity android:name="com.tea.Traverse.ItemMenu1"/>
+        <activity android:name="com.tea.Traverse_1.Traverse_1_qishi"/>
+        <activity android:name="com.tea.Traverse_1.SubTemplete_1"/>
+        <activity android:name="com.tea.Traverse_1.ZhiDaoxian_resultActvity"/>
+        <activity android:name="com.tea.Traverse_2.CloseDaoxian_resultActivity"/>
+        <activity android:name="com.tea.Traverse_2.Traverse_2_qishi"/>
+        <activity android:name="com.tea.Traverse_2.SubTemplete_2"/>
+        <activity android:name="com.tea.ZhLevelLib.ZhLevelLib_known"/>
+        <activity android:name="com.tea.LevelLib.ItemMenu2"/>
+        <activity android:name="com.tea.ZhLevelLib.LevelLib_station_1"/>
+        <activity android:name="com.tea.ZhLevelLib.LevelLib_station_2"/>
+        <activity android:name="com.tea.ZhLevelLib.ZhLevelLib_result"/>
+        <activity android:name="com.tea.ZhLevelLib.SubTraverse_1"/>
+        <activity android:name="com.tea.ZhLevelLib.SubTraverse_2"/>
+    </application>
+</manifest>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:customeedittext="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/activity_toolbar"
+        android:id="@+id/toolbar_daoxian_1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:text="请输入已知数据，准备测量"
+        android:textSize="22sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/daoxian_zhuanxiang_1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="转折角:       "
+                android:textSize="15sp" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/daoxian_left_1"
+                android:text="    左角     "
+                android:checked="true"
+                android:textSize="15sp"
+                android:textColor="@android:color/black" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/daoxian_right_1"
+                android:text="    右角     "
+                android:textSize="15sp"
+                android:textColor="@android:color/black"/>
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="起始点B的坐标"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_bottom_line">
+
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:layout_width="201dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:labelText="X坐标">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/traverse_2_edt1_ID"
+                android:layout_width="166dp"
+                android:layout_height="match_parent"
+                android:inputType="phone"
+                app:prefix="X "
+                app:suffix=" m"
+                android:maxLines="1"/>
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            app:labelText="Y坐标">
+
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:id="@+id/traverse_2_edt2_ID"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:inputType="phone"
+                app:prefix="Y "
+                app:suffix=" m" />
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_bottom_line">
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="起始边方位角"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_bright"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/traverse_2_edt3_ID"
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:inputType="phone"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="度"
+            android:textSize="30sp"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/traverse_2_edt4_ID"
+            android:layout_width="129dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:inputType="phone"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="分"
+            android:textSize="30sp"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/traverse_2_edt5_ID"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:inputType="phone"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="秒"
+            android:textSize="30sp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/traverse_2_btn1_ID"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/button_view"
+        android:text="已知点数据入库"
+        android:textSize="20sp"/>
+</LinearLayout>

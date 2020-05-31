@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/activity_toolbar"
+        android:id="@+id/toolbar_dmstorad" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="100dp">
+
+       <TextView
+           android:layout_width="129dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center_vertical"
+           android:text="角度"
+           android:textColor="@android:color/holo_blue_bright"
+           android:textSize="40sp" />
+       <EditText
+           android:id="@+id/radtodms_edt1"
+           android:layout_width="120dp"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           android:textSize="40sp"
+           android:inputType="phone"
+           android:background="@drawable/edittext"
+           android:layout_weight="1"/>
+       <TextView
+           android:layout_width="30dp"
+           android:layout_height="match_parent"
+           android:text="度"
+           android:gravity="center_vertical"
+           android:textSize="30sp"/>
+       <EditText
+           android:id="@+id/radtodms_edt2"
+           android:layout_width="120dp"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           android:textSize="40sp"
+           android:inputType="phone"
+           android:background="@drawable/edittext"
+           android:layout_weight="1"/>
+       <TextView
+           android:layout_width="30dp"
+           android:layout_height="match_parent"
+           android:text="分"
+           android:gravity="center_vertical"
+           android:textSize="30sp"/>
+       <EditText
+           android:id="@+id/radtodms_edt3"
+           android:layout_width="120dp"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           android:textSize="40sp"
+           android:inputType="phone"
+           android:background="@drawable/edittext"
+           android:layout_weight="1"/>
+       <TextView
+           android:layout_width="30dp"
+           android:layout_height="match_parent"
+           android:text="秒"
+           android:gravity="center_vertical"
+           android:textSize="30sp"/>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="分别在三个输入框输入度、分、秒，再点击计算按钮，即可显示结果"
+            android:textSize="25sp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="219dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+      <Button
+          android:id="@+id/dmstorad_btn1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@drawable/button_view"
+          android:text="计算"
+          android:textSize="40sp"
+          />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+     <TextView
+         android:id="@+id/radtodms_tview1"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:textSize="40sp"
+         android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

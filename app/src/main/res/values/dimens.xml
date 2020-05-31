@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="topLineHeight">68dp</dimen>
+    <dimen name="MainMenuItemHeight">120dp</dimen>
+    <dimen name="MainMenuItemTitleSize">28sp</dimen>
+    <dimen name="MainMenuItemBriefTextSize">10sp</dimen>
+    <dimen name="IconSize">50dp</dimen>
+    <dimen name="bottomLineHeight">100dp</dimen>
+    <dimen name="SubTitleTextSize">30sp</dimen>
+    <dimen name="subIconSize">30dp</dimen>
+    <dimen name="subIconSeperateSize">5dp</dimen>
+    <dimen name="MenuIconSize">30dp</dimen>
+    <dimen name="MainIconSeperateSize">5dp</dimen>
+    <dimen name="TitleTextSize">30sp</dimen>
+    <dimen name="subHeaderHeight">68dp</dimen>
+    <dimen name="subHeaderMarginVertical">10dp</dimen>
+    <dimen name="subHeaderMarginHorizontal">10dp</dimen>
+    <dimen name="subHeaderTextSize">36sp</dimen>
+    <dimen name="bottomButtonWidth">68dp</dimen>
+</resources>

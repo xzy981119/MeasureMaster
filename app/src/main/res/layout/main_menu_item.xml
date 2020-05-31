@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/MainMenuItemHeight"
+    android:background="@drawable/bg_bottom_line">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center">
+        <ImageView
+            android:background="@color/blue"
+            android:layout_width="@dimen/IconSize"
+            android:layout_height="@dimen/IconSize"
+            android:src="@drawable/main_menu_item_icon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/main_menu_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="坐标计算"
+                android:textSize="@dimen/MainMenuItemTitleSize"
+                android:gravity="bottom"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/main_menu_item_brief"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="弧度角度转化/点到直线的距离/两直线交点/坐标计算................................................................."
+                android:textSize="@dimen/MainMenuItemBriefTextSize"
+                android:gravity="left"
+                android:padding="3dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="@dimen/IconSize"
+            android:layout_height="@dimen/IconSize"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">测量精灵</string>
+    <string name="str">已显示</string>
+    <string name="tip">星辰暗把测兵赞，跋山涉水数十里</string>
+    <string name="title">Vintage 50\'s Dress</string>
+    <string name="dry">Measure Elf</string>
+    <string name="description">Unique and rare dress from 1952. Made out of washed cotton with front pockets. Sleeveless with button closures.</string>
+    <string-array name="translate">
+        <item>大地BLH->直角XYZ</item>
+        <item>直角XYZ->大地BLH</item>
+        <item>大地BLH->高斯xyH</item>
+        <item>高斯xyH->大地BLH</item>
+    </string-array>
+</resources>

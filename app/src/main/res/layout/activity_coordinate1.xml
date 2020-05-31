@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:customeedittext="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/activity_toolbar"
+        android:id="@+id/toolbar_coordinate1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="起点坐标"
+                android:textSize="40sp"
+                android:textColor="@android:color/holo_blue_bright"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_bottom_line">
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelText="X坐标">
+               <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   app:prefix="X"
+                   app:suffix="m"
+                   android:id="@+id/coordinate1_edit1"
+                   android:inputType="phone"/>
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_bottom_line">
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:labelText="Y坐标">
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/coordinate1_edit2"
+                    app:prefix="Y"
+                    app:suffix="m" />
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+        </LinearLayout>
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:background="@drawable/bg_bottom_line">
+
+       <TextView
+           android:layout_width="102dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:text="方位角"
+           android:textColor="@android:color/holo_blue_bright"
+           android:textSize="40sp" />
+
+       <EditText
+           android:id="@+id/coordinate1_edit3"
+           android:layout_width="98dp"
+           android:layout_height="105dp"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:inputType="phone"
+           android:textSize="40sp" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:text="度"
+           android:textSize="30sp"
+           android:gravity="center_vertical"/>
+
+       <EditText
+           android:id="@+id/coordinate1_edit4"
+           android:layout_width="87dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:inputType="phone"
+           android:textSize="40sp" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:text="分"
+           android:textSize="30sp"
+           android:gravity="center_vertical"/>
+
+       <EditText
+           android:id="@+id/coordinate1_edit5"
+           android:layout_width="90dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:inputType="phone"
+           android:textSize="40sp" />
+
+       <TextView
+           android:layout_width="43dp"
+           android:layout_height="match_parent"
+           android:text="秒"
+           android:textSize="30sp"
+           android:gravity="center_vertical"/>
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="水平距离">
+            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/coordinate1_edit6"
+                app:prefix="d "
+                app:suffix=" m"
+                android:inputType="phone"/>
+        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/coordinate1_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_view"
+            android:text="计算"
+            android:textSize="40sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/coordinate1_tview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+</LinearLayout>

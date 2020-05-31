@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_xianlu2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tea.quxian.Quxian_resultActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--Toolbar-->
+        <include layout="@layout/activity_toolbar"
+            android:id="@+id/toolbar_xianlu_result" />
+
+        <TextView
+            android:id="@+id/xianlu2_t0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="线路曲线计算结果"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/toolbar_xianlu_result"/>
+        <HorizontalScrollView
+            android:id="@+id/xianlu2_sv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/xianlu2_t0">
+            <TextView
+                android:id="@+id/xianlu2_t1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:textIsSelectable="true"/>
+        </HorizontalScrollView>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@id/xianlu2_sv1">
+            <TextView
+                android:id="@+id/xianlu2_t2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:textIsSelectable="true"/>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</ScrollView>
